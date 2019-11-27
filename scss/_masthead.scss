@@ -14,17 +14,18 @@
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;
-    background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+    background: -webkit-linear-gradient(fade-out(white, 0), fade-out(white, 0.2));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
   h2 {
-    max-width: 20rem;
+    max-width: 30rem;
+    opacity: .7;
     font-size: 1rem;
   }
   @media(min-width: 768px) {
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 4rem;
     }
   }
@@ -32,7 +33,7 @@
     height: 100vh;
     padding: 0;
     h1 {
-      font-size: 6.5rem;
+      font-size: 3rem;
       line-height: 6.5rem;
       letter-spacing: 0.8rem;
     }

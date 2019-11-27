@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Grayscale - Start Bootstrap Theme</title>
+  <title>Felipe de Alba</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/grayscale.css" rel="stylesheet">
 
 </head>
 
@@ -28,7 +28,6 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -53,40 +52,47 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <h1 class="mx-auto my-0 text-uppercase">Felipe de Alba</h1>
+        <h2 class="mx-auto mt-2 mb-5" style="color: white; opacity: .7;">I'm a Argentinean Jr. Full Stack Developer,
+currently living in Madrid. Autodidact Designer and
+Digital Marketer, i studied Computer Programming at Le Wagon.</h2>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
   <section id="about" class="about-section text-center">
+          <!-- particles.js container --> <div style="background: rgb(30, 30, 30); height: 75%;"id="particles-js"></div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <img src="img/Foto_de_perfil.jpg" class="mb-4 mt-4 rounded-circle w-25 shadow" alt="">
+          <h2 class="text-white mb-4">About Me</h2>
+          <p style="color: white; opacity: .8;">I am a Jr. Web Developer and a self-taught Digital Marketer. I have over 2+ years of experience in lead generation using Instagram/Facebok/Google ads. To this day i run Digital Marketing for an education center and i am currently looking for a job where i can learn what is needed to have a successful career in programming.</p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
+  <section class="projects-section bg-light">
+      <div class="text-center pb-5 pt-5 mt-5 mb-5" id="projects">
+        <h2 class="text-dark"><strong>MY PROJECTS</strong></h2>
+      </div>
     <div class="container">
-
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <div style="overflow: hidden;">
+            <a href="http://planeo.xyz">
+            <img class="img-fluid mb-3 mb-lg-0 cs-img" src="img/planeo.jpg" alt="">
+            </a>
+          </div>
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Planeo</h4>
+            <p class="text-black-50 mb-0">This was my final project in Le Wagon's Bootcamp. Made with Ruby on Rails, Bootstrap and JS in groups of four. We made a responsive web app in ten days, in groups of four. An app to make plans with your friends, were i was the front-end developer.</p>
           </div>
         </div>
       </div>
@@ -94,14 +100,18 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <div style="overflow: hidden;">
+            <a href="https://luxury-car-mkt-place-fdealba.herokuapp.com/">
+              <img class="img-fluid cs-img" src="img/luxury.jpg" alt="">
+            </a>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <h4 class="text-white">Mr.Luxury</h4>
+                <p class="mb-0 text-white-50">Le Wagon's AirBnb Week, we made a Luxury Car Rental Marketplace were i was Project Manager and Front-end Developer in a group of four. It's made with Rails, JS, Bootstrap and different API's for geolocation.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -112,14 +122,18 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+            <div style="overflow: hidden;">
+              <a href="https://mister-cocktail-311.herokuapp.com/cocktails">
+                <img class="img-fluid cs-img" src="img/cocktail.jpg" alt="">
+              </a>
+            </div>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <h4 class="text-white">Mr. Cocktail</h4>
+                <p class="mb-0 text-white-50">My First ever Project as a developer at Le Wagon. A very simple app to save Cocktail recipes with reviews. Made alone in three days time.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -129,28 +143,8 @@
 
     </div>
   </section>
-
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <section class="contact-section bg-black" id="signup">
     <div class="container">
 
       <div class="row">
@@ -161,7 +155,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">Madrid, Comunidad de Madrid.</div>
             </div>
           </div>
         </div>
@@ -173,7 +167,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">felipe.de.alba.alegre@gmail.com</a>
               </div>
             </div>
           </div>
@@ -185,20 +179,17 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">+34 648-975-039</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
+        <a href="https://www.linkedin.com/in/felipe-de-alba-alegre-291836175/" class="mx-2" target="_blank">
+          <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
+        <a href="http://github.com/fdealba" target="_blank" class="mx-2">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -209,7 +200,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; Felipe de Alba 2019
     </div>
   </footer>
 
