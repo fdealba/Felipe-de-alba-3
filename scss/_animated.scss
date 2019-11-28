@@ -1,25 +1,35 @@
-// .line-1{
-//     position: relative;
-//     top: 50%;
-//     width: 10rem;
-//     margin: 0 auto;
-//     border-right: 2px solid rgba(255,255,255,.75);
-//     text-align: center;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     transform: translateY(-50%);
-// }
+.type-writer-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #dedede;
+  font-size: 40px !important;
+  letter-spacing: 5px !important;
+  font-family: 'Anonymous Pro', monospace;
+  border-right: 1px solid #dedede;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(20) 1s 1 normal both,
+    cursorblink 0.8s infinite;
+}
 
-// /* Animation */
-// .anim-typewriter{
-//   animation: typewriter 4s steps(44) 1s 1 normal both,
-//              blinkTextCursor 500ms steps(44) infinite normal;
-// }
-// @keyframes typewriter{
-//   from{width: 0;}
-//   to{width: 11em;}
-// }
-// @keyframes blinkTextCursor{
-//   from{border-right-color: rgba(255,255,255,.75);}
-//   to{border-right-color: transparent;}
-// }
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10em;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+
+  to {
+    border-right: 1px solid #666;
+  }
+}

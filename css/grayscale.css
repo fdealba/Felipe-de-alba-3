@@ -327,6 +327,58 @@ canvas {
   border-radius: 0 0 3px 3px;
 }
 
+.type-writer-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #dedede;
+  font-size: 40px !important;
+  letter-spacing: 5px !important;
+  font-family: 'Anonymous Pro', monospace;
+  border-right: 1px solid #dedede;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typewriter 2s steps(20) 1s 1 normal both, cursorblink 0.8s infinite;
+  animation: typewriter 2s steps(20) 1s 1 normal both, cursorblink 0.8s infinite;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+
+@-webkit-keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+  to {
+    border-right: 1px solid #666;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+  to {
+    border-right: 1px solid #666;
+  }
+}
+
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
