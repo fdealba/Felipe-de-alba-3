@@ -5,6 +5,7 @@
  */
 
 #mainNav {
+  z-index: 9999999999;
   min-height: 56px;
   background-color: #fff;
 }
