@@ -24,13 +24,14 @@
     font-size: 1rem;
   }
   @media(min-width: 768px) {
+    height: 101vh;
     h1 {
       font-size: 3rem;
       line-height: 4rem;
     }
   }
   @media(min-width: 992px) {
-    height: 100vh;
+    height: 101vh;
     padding: 0;
     h1 {
       font-size: 3rem;

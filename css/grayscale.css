@@ -114,6 +114,9 @@
 }
 
 @media (min-width: 768px) {
+  .masthead {
+    height: 101vh;
+  }
   .masthead h1 {
     font-size: 3rem;
     line-height: 4rem;
@@ -122,7 +125,7 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 101vh;
     padding: 0;
   }
   .masthead h1 {
@@ -164,8 +167,9 @@
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  padding-top: 8rem;
+  background: #161616;
+  height: 100vh;
 }
 
 .about-section p {
@@ -333,7 +337,7 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #dedede;
-  font-size: 40px !important;
+  font-size: 2rem !important;
   letter-spacing: 5px !important;
   font-family: 'Anonymous Pro', monospace;
   border-right: 1px solid #dedede;
@@ -348,7 +352,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 10em;
+    width: 10.5em;
   }
 }
 
@@ -357,7 +361,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 10em;
+    width: 10.5em;
   }
 }
 
@@ -377,6 +381,54 @@ canvas {
   to {
     border-right: 1px solid #666;
   }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 15px;
+}
+
+.bar {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.bar .bar-info {
+  border-radius: 5px;
+  padding: 1.3rem;
+  background: #323232;
+  color: white;
+  width: 10%;
+  position: relative;
+  height: 100%;
+  transition: width 3.3s ease-in-out;
+}
+
+.bar .bar-info .percent {
+  float: right;
+}
+
+.bar .bar-info.html {
+  background: linear-gradient(#323232, #323232), #323232;
+}
+
+.bar .bar-info.css {
+  background: linear-gradient(#646464, #646464), #646464;
+}
+
+.bar .bar-info.js {
+  background: linear-gradient(#969696, #969696), #969696;
+}
+
+.bar .bar-info.ps {
+  background: linear-gradient(#c8c8c8, #c8c8c8), #c8c8c8;
 }
 
 body {

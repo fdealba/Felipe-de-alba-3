@@ -1,0 +1,46 @@
+$red: rgb(50, 50, 50);
+$yellow: rgb(100, 100, 100);
+$blue: rgb(150, 150, 150);
+$purp: rgb(200, 200, 200);
+
+.wrapper{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 15px;
+}
+
+.bar{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+      display: flex;
+    align-items: center;
+  .bar-info{
+    border-radius: 5px;
+    padding: 1.3rem;
+    background: $red;
+    color: white;
+    width: 10%;
+    position: relative;
+    height: 100%;
+    transition: width 3.3s ease-in-out;
+    .percent{
+      float: right;
+    }
+    &.html{
+      background: linear-gradient($red, rgb(50, 50, 50)), $red;
+    }
+    &.css{
+      background: linear-gradient($yellow, rgb(100, 100, 100)), $yellow;
+    }
+    &.js{
+      background: linear-gradient($blue, rgb(150, 150, 150)), $blue;
+    }
+    &.ps{
+      background: linear-gradient($purp, rgb(200, 200, 200)), $purp;
+    }
+  }
+}
